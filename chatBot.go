@@ -10,7 +10,7 @@ import (
 func chatGPT(userId int, message string) string {
 	app := "/usr/bin/python3.8"
 
-	cmd := exec.Command(app, "/home/anton/TeleBotGo/pythonScripts/chatBot.py")
+	cmd := exec.Command(app, "/home/user/TeleBotGo/pythonScripts/chatBot.py")
 
 	input := fmt.Sprintf("%d;%s", userId, message)
 
