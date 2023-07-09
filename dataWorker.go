@@ -20,7 +20,7 @@ type dataRow struct {
 
 // TeleBotGo/finances.db
 func NewDataWorker() DataWorker {
-	database, err := sql.Open("sqlite3", "/home/anton/TeleBotGo/finances.db")
+	database, err := sql.Open("sqlite3", "/home/user/TeleBotGo/finances.db")
 	if err != nil {
 		log.Fatal(err)
 	}
